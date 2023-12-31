@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Shrink</title>
+    <style>
+      #container {
+        display: flex;
+        border: 1px solid red;
+      }
+
+      .item {
+        width: 250px;
+        height: 100px;
+        color: white;
+        margin: 8px;
+      }
+
+      .item-1 {
+        background-color: green;
+        flex-shrink: 1;
+      }
+
+      .item-2 {
+        background-color: red;
+        flex-shrink: 0;
+      }
+
+      .item-3 {
+        background-color: purple;
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- where ul represents flex grow/shrink -->
+    <div id="container">
+      <p class="item item-1">Item 1</p>
+      <p class="item item-2">Item 2</p>
+      <p class="item item-3">Item 3</p>
+    </div>
+  </body>
+</html>

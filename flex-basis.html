@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Basis</title>
+    <style>
+      #container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        border: 1px solid red;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        color: white;
+        margin: 8px;
+      }
+
+      .item-1 {
+        background-color: green;
+      }
+
+      .item-2 {
+        background-color: red;
+        flex-basis: 500px;
+        /* flex-basis: 500ems; */
+      }
+
+      .item-3 {
+        background-color: purple;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- where ul represents flex basis -->
+    <div id="container">
+      <p class="item item-1">Item 1</p>
+      <p class="item item-2">Item 2</p>
+      <p class="item item-3">Item 3</p>
+    </div>
+  </body>
+</html>

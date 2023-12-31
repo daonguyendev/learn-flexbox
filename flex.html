@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex</title>
+    <style>
+      #container {
+        display: flex;
+        /* flex-flow: row wrap; */
+        justify-content: flex-start;
+        border: 1px solid red;
+      }
+
+      .items {
+        width: 100px;
+        height: 100px;
+        margin: 8px;
+        color: white;
+      }
+
+      .main {
+        /* Shorthand of 3 properties: flex-grow: 2;
+    flex-shrink: 1; flex-basis: auto;*/
+        flex: 2 1 auto;
+        background-color: green;
+      }
+
+      .sidebar {
+        /* Shorthand of 3 properties: flex-grow: 1;
+    flex-shrink: 1; flex-basis: auto;*/
+        flex: 1 1 auto;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- where ul represents flex shorthand -->
+    <div id="container">
+      <p class="items main">Main</p>
+      <p class="items sidebar">Sidebar</p>
+    </div>
+  </body>
+</html>
